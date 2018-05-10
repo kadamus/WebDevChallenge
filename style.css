@@ -1,0 +1,309 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../img/Hot%20vs%20Cold%202560x1440.png) top right;
+    background-size: cover;
+    font-family: "Roboto";
+}
+/* 
+///////////////////////////////
+            Logo
+//////////////////////////////
+*/
+.logo {
+    width: 100%;
+    margin-top: 5%;
+}
+.logo-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-img {
+    padding-right: 2%;
+}
+.logo-items {
+    opacity: 0.3;    
+}
+/* 
+///////////////////////////////
+            Main
+//////////////////////////////
+*/
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+.register-form, .send-mail, .sign-in-form {
+    width: 400px;
+}
+.name {
+    font-size: 32px;
+    color: #fff;
+    line-height: 1.2;
+    text-align: center;
+    text-shadow: 0px 2px 2px rgba(43, 1, 0, 0.75);
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+.main-body {
+    display: flex;
+    flex-direction: column;
+    background: #f4f4f4;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 0px 20px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 0px 20px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 0px 20px rgba(0,0,0,0.3);
+}
+.main-body input {
+    max-width: 350px;
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 40px;
+    background: linear-gradient(to bottom, rgba(248,248,248,1) 0%, rgba(243,243,243,1) 100%);
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #afafaf;
+    line-height: 1.2;
+    text-align: left;
+    box-sizing: border-box;
+    padding-left: 60px;
+}
+::placeholder {
+    color: #afafaf;   
+}
+
+input.username {
+    background-image: url(../img/glyphicons_003_user.png);
+    background-position: 15px 7px;
+    background-repeat: no-repeat;    
+}
+input.password {
+    background-image: url(../img/glyphicons_203_lock.png);
+    background-position: 15px 7px;
+    background-repeat: no-repeat;    
+}
+input.confirm-password {
+    background-image: url(../img/glyphicons_203_lock.png);
+    background-position: 15px 7px;
+    background-repeat: no-repeat;    
+}
+input.email {
+    background-image: url(../img/glyphicons_010_envelope.png);
+    background-position: 15px 12px;
+    background-repeat: no-repeat; 
+}
+input.location {
+    background-image: url(../img/glyphicons_242_google_maps.png);
+    background-position: 20px 7px;
+    background-repeat: no-repeat;    
+}
+input.number {
+    background-image: url(../img/glyphicons_139_phone.png);
+    background-position: 20px 7px;
+    background-repeat: no-repeat;    
+}
+/* 
+///////////////////////////////
+            Checkbox
+//////////////////////////////
+*/
+.container {
+    width: 350px;
+    display: block;
+    position: relative;
+    padding-left: 10%;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 15px auto;
+    color: #afafaf;
+    font-family: "Roboto";
+    line-height: 1.6;
+    text-align: left;
+    box-sizing: border-box;   
+}
+.container input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #f6f6f6;
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+}
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+.container .checkmark:after {
+    left: 5px;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(to bottom, rgba(177,219,87,1) 0%, rgba(115,186,14,1) 100%);
+    border-radius: 2px;
+}
+/* 
+///////////////////////////////
+            Button
+//////////////////////////////
+*/
+.btn-main {
+    width: 350px;
+    height: 50px;
+    margin: 0 auto 17px auto;
+    background: linear-gradient(to bottom, rgba(177,219,87,1) 0%, rgba(115,186,14,1) 100%);
+    text-decoration: none;
+    border: 1px solid #3b9a00;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.btn-main p, .btn-sign-in-form p {
+    font-size: 24px;
+    color: #fff;
+    line-height: 2;
+    text-shadow: 0.6px 0.8px 0px rgba(81, 133, 14, 0.4);
+    margin: 0;
+    text-align: center;
+}
+.btn-sign-in-form {
+    width: 140px;
+    height: 50px;
+    background: linear-gradient(to bottom, rgba(177,219,87,1) 0%, rgba(115,186,14,1) 100%);
+    text-decoration: none;
+    border: 1px solid #3b9a00;
+    border-radius: 5px;
+    box-sizing: border-box;
+    
+}
+.btn-sign-in-form p {
+    width: 140px;
+}
+.recover-btn {
+    opacity: 0.5;
+}
+.subscribe-btn {
+    background: linear-gradient(to bottom, rgba(247, 111, 127,1) 0%, rgba(240, 55, 71,1) 100%);
+    border: 1px solid #a2202a;   
+}
+a:hover {
+    opacity: 0.8;
+}
+/* 
+///////////////////////////////
+            Textarea
+//////////////////////////////
+*/
+.send-email {
+    margin-top: 60px;
+}
+.send-textarea {
+    margin: 18px auto 0 auto;
+    max-width: 350px;
+    width: 350px;   
+}
+textarea {
+    border: 1px solid #c6c6c6;
+    border-radius: 5px;
+    padding: 15px;
+    line-height: 1.2;
+    width: 350px;
+    height: 230px;
+    box-sizing: border-box;
+    resize: none;
+}
+/* 
+///////////////////////////////
+            Sign in Form
+//////////////////////////////
+*/
+.sign-in {
+    width: 350px;
+    height: 50px;
+    margin: 20px auto;
+    display: flex;
+}
+.sign-in .container input {
+    width: 100%;
+}
+/* 
+///////////////////////////////
+            Recover Form
+//////////////////////////////
+*/
+.recover-form {
+    margin-top: 50px;
+}
+.recover-form-box, .subscribe-form-box {
+    margin: 20px auto;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+/* 
+///////////////////////////////
+            Subscribe Form
+//////////////////////////////
+*/
+.subscribe-form {
+    margin-top: 50px;
+}
+/* 
+///////////////////////////////
+        Logo Bottom
+//////////////////////////////
+*/
+.logo-bottom {
+    width: 400px;
+    margin-top: 70px;
+    text-align: center;
+    opacity: 0.3;
+}
+.logo-bottom > img {
+    margin-top: 40px;
+} 
+.logo-space {
+    display: flex;
+    justify-content: space-around;
+}
+/* 
+///////////////////////////////
+        Focus
+//////////////////////////////
+*/
+input, textarea {
+  transition: all 0.30s ease-in-out;
+  outline: none;
+  border: 1px solid #DDDDDD;
+}
+ 
+input:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
+}
